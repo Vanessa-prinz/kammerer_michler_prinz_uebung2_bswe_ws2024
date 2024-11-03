@@ -17,10 +17,10 @@ public abstract class SearchAlgorithm {
                 printSearchResult(list, searchedInteger, index);
             } else {
                 System.out.println("Unsorted list!");
-                int indexUnsorted = LinearSearchAlgorithm.execute(list, searchedInteger);
+                int indexUnsorted = searchAlgorithm.execute(list, searchedInteger);
                 printSearchResult(list, searchedInteger, indexUnsorted);
                 System.out.println("Sorted list!");
-                int indexSorted = LinearSearchAlgorithm.execute(ListProcessor.getSortedList(list), searchedInteger);
+                int indexSorted = searchAlgorithm.execute(ListProcessor.getSortedList(list), searchedInteger);
                 printSearchResult(list, searchedInteger, indexSorted);
             }
         }

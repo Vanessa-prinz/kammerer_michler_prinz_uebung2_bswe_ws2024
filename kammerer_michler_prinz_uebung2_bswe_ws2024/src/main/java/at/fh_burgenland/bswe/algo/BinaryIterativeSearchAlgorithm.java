@@ -1,9 +1,10 @@
 package at.fh_burgenland.bswe.algo;
 
-public class BinaryIterativeSearchAlgorithm implements SearchAlgorithm {
+public class BinaryIterativeSearchAlgorithm extends SearchAlgorithm {
     //TODO: -1 wenn number not found
 
-    public static int execute(int[] list, int searchedNumber) {
+    @Override
+    public int execute(int[] list, int searchedNumber) {
         return 0;
     }
 }
