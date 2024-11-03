@@ -1,10 +1,14 @@
 package at.fh_burgenland.bswe.algo;
 
+import at.fh_burgenland.bswe.algo.SearchAlgorithm.BinaryIterativeSearchAlgorithm;
+import at.fh_burgenland.bswe.algo.SearchAlgorithm.BinaryRecursiveSearchAlgorithm;
+import at.fh_burgenland.bswe.algo.SearchAlgorithm.ExponentialSearchAlgorithm;
+import at.fh_burgenland.bswe.algo.SearchAlgorithm.LinearSearchAlgorithm;
 import lombok.extern.log4j.Log4j2;
 
 import java.util.Scanner;
 
-import static at.fh_burgenland.bswe.algo.SearchAlgorithm.runSearchAlgorithm;
+import static at.fh_burgenland.bswe.algo.SearchAlgorithm.SearchAlgorithm.runSearchAlgorithm;
 
 @Log4j2
 public class Menu {
