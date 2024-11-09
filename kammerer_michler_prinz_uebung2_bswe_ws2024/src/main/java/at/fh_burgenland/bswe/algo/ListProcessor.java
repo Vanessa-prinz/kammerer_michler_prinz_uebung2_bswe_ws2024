@@ -17,7 +17,6 @@ public class ListProcessor {
                     System.out.println("Value can not be parsed!");
                     return null;
                 }
-
             }
             return values;
         } else {
@@ -54,5 +53,18 @@ public class ListProcessor {
             }
         }
         return true;
+    }
+
+    public static String getListAsString(int[] list) {
+        if (list == null || list.length == 0) {
+            return null;
+        }
+
+        StringBuilder listAsString = new StringBuilder();
+        for (int i = 0; i < list.length; i++) {
+            listAsString.append(list[i]).append(" "); //listAsString += list[i] + " ";
+        }
+
+        return listAsString.toString().trim();
     }
 }

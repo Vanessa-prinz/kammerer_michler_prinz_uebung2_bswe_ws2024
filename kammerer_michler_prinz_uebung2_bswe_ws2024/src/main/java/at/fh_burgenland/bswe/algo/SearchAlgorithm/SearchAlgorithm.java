@@ -3,7 +3,6 @@ package at.fh_burgenland.bswe.algo.SearchAlgorithm;
 import at.fh_burgenland.bswe.algo.ListProcessor;
 
 public abstract class SearchAlgorithm {
-    //TODO: getListAsString
 
     public abstract int execute(int[] list, int searchedInteger);
 
@@ -37,7 +36,7 @@ public abstract class SearchAlgorithm {
     }
 
     private static void printSearchResult(int[] list, int searchedInteger, int index) {
-//        System.out.println("List: " + list.getListAsString());
+        System.out.println("List: " + ListProcessor.getListAsString(list));
         System.out.println("Number to search for: " + searchedInteger);
         if (index >= 0) {
             System.out.println("Found at index number: " + index);
