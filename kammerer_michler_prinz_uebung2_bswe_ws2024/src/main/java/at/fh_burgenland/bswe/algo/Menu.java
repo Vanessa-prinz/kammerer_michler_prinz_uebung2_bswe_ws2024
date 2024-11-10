@@ -16,7 +16,8 @@ public class Menu {
 
     public static void run() {
         System.out.println("Welcome to our search algorithms!");
-        while (true) {
+        boolean isRunning = true;
+        while (isRunning) {
             System.out.println("Enter the list in the following format: 1,2,3,... (only integer, seperated by ',', spacing is removed)");
             System.out.println("Please give me your list:");
             String listInput = scanner.nextLine();
@@ -34,11 +35,12 @@ public class Menu {
                 2 - use the binary search (iterative)
                 3 - use the exponential search
                 4 - use the linear search
-                5 - exit program
+                5 - enter new list
+                6 - exit program
                 """;
-            boolean isRunning = true;
+            boolean runSearch = true;
 
-            while (isRunning) {
+            while (runSearch) {
                 System.out.println(menu);
                 System.out.print("Please enter your choice: ");
                 int userChoice = checkInputMisMatch();
@@ -57,6 +59,10 @@ public class Menu {
                         runSearchAlgorithm(list, searchedInteger, new LinearSearchAlgorithm());
                         break;
                     case 5:
+                        runSearch = false;
+                        break;
+                    case 6:
+                        runSearch = false;
                         isRunning = false;
                         break;
                     default:
