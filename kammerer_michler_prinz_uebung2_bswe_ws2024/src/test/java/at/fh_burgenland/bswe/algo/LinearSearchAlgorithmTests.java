@@ -44,6 +44,26 @@ public class LinearSearchAlgorithmTests {
     }
 
     @Test
+    public void linearSearchTest_Success_SingleElementFound() {
+        int searchedNumber = TestData.getSearchedNumberPositive();
+        int[] searchedList = TestData.getListSingleElement();
+
+        Assertions.assertEquals(
+                0, new LinearSearchAlgorithm().execute(searchedList, searchedNumber)
+        );
+    }
+
+    @Test
+    public void linearSearchTest_Failure_SingleElementNotFound() {
+        int searchedNumber = 100;
+        int[] searchedList = TestData.getListSingleElement();
+
+        Assertions.assertEquals(
+                -1, new LinearSearchAlgorithm().execute(searchedList, searchedNumber)
+        );
+    }
+
+    @Test
     public void linearSearchTest_Failure_NumberNotFound_Sorted() {
         int searchedNumber = 274;
         int[] searchedListSorted = TestData.getListSortedOnlyPositive();

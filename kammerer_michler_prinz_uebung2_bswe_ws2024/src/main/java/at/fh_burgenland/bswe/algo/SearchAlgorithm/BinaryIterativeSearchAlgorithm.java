@@ -6,7 +6,7 @@ public class BinaryIterativeSearchAlgorithm extends SearchAlgorithm {
 
     @Override
     public int execute(int[] sortedList, int searchedInteger) {
-        if (sortedList == null || sortedList.length == 0)
+        if (sortedList == null || sortedList.length == 0 || sortedList.length == 1 && sortedList[0] != searchedInteger)
             return -1;
 
         int lengthBeforeSubArray = 0;
@@ -20,8 +20,6 @@ public class BinaryIterativeSearchAlgorithm extends SearchAlgorithm {
                 sortedList = Arrays.copyOfRange(sortedList, 0, sortedList.length / 2);
             }
 
-            if (sortedList.length == 1 && sortedList[0] != searchedInteger)
-                return -1;
         }
     }
 }

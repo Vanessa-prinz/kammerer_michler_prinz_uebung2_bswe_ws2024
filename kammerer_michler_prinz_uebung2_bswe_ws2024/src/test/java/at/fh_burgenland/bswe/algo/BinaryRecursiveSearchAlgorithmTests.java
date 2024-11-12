@@ -25,6 +25,26 @@ public class BinaryRecursiveSearchAlgorithmTests {
     }
 
     @Test
+    public void BinaryRecursiveSearchTest_Success_SingleElementFound() {
+        int searchedNumber = TestData.getSearchedNumberPositive();
+        int[] searchedList = TestData.getListSingleElement();
+
+        Assertions.assertEquals(
+                0, new BinaryRecursiveSearchAlgorithm().execute(searchedList, searchedNumber)
+        );
+    }
+
+    @Test
+    public void BinaryRecursiveSearchTest_Failure_SingleElementNotFound() {
+        int searchedNumber = 100;
+        int[] searchedList = TestData.getListSingleElement();
+
+        Assertions.assertEquals(
+                -1, new BinaryRecursiveSearchAlgorithm().execute(searchedList, searchedNumber)
+        );
+    }
+
+    @Test
     public void BinaryRecursiveSearchTest_Failure_NumberNotFound() {
         int searchedNumber = 274;
         int[] searchedListSorted = TestData.getListSortedOnlyPositive();
