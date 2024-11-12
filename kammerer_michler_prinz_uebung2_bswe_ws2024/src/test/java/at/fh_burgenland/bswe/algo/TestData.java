@@ -2,6 +2,10 @@ package at.fh_burgenland.bswe.algo;
 
 import lombok.Getter;
 
+/**
+ * This class provides test data for testing the search algorithms.
+ * It includes positive and negative numbers, sorted and unsorted lists and a single element list.
+ */
 public class TestData {
     @Getter
     private static final int searchedNumberPositive = 456;
