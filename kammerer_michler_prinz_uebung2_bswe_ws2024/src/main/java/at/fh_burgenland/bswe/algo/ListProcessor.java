@@ -34,15 +34,6 @@ public class ListProcessor {
         }
     }
 
-    //TODO: kann man löschen???
-    public static int[] getSortedList(String userInput) {
-        if (getList(userInput) == null) {
-            return null;
-        } else {
-            return Arrays.stream(Objects.requireNonNull(getList(userInput))).sorted().toArray();
-        }
-    }
-
     /**
      * This method sorts the given integer array in ascending order.
      * @param list the array of integers to be sorted

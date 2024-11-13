@@ -13,6 +13,5 @@ public class SearchAlgorithmDriverClass {
     }
 }
 
-//TODO: log4j bei den Timestamps bei Laufzeit (vor und nach Ausführung und Laufzeit)
+//TODO: log4j level klären bei zeiten & sonstige infomeldungen
 //TODO: Ausführung auf beiden Rechnern + logs zusammenfügen
-//TODO: Big-O-Notation
