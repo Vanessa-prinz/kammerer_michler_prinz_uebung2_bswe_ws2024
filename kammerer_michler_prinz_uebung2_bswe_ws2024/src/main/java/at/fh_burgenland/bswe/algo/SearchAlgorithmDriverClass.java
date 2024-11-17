@@ -13,5 +13,4 @@ public class SearchAlgorithmDriverClass {
     }
 }
 
-//TODO: log4j level klären bei zeiten & sonstige infomeldungen
 //TODO: Ausführung auf beiden Rechnern + logs zusammenfügen

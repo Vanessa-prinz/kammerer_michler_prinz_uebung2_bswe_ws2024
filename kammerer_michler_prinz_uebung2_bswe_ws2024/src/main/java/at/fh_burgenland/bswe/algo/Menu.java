@@ -15,6 +15,7 @@ import static at.fh_burgenland.bswe.algo.SearchAlgorithm.SearchAlgorithm.runSear
  */
 @Log4j2
 public class Menu {
+
     private static final Scanner scanner = new Scanner(System.in);
 
     /**
