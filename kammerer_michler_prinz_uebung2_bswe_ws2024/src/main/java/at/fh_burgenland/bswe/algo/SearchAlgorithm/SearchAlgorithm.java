@@ -12,18 +12,22 @@ public abstract class SearchAlgorithm {
     private static final Logger logger = LogManager.getLogger(SearchAlgorithm.class);
 
     /**
-     * This method executes the search algorithm.
+     * This abstract method executes the search algorithm.
      * @param list the array of integers to search in
      * @param searchedInteger the integer value to search for in the list
      * @return the index of searchedInteger if found, -1 if not
      */
     public abstract int execute(int[] list, int searchedInteger);
 
-    //TODO: javadoc wenn logging implementiert
+    /**
+     * This method executes the specific search algorithm and logs the start, execution and end time.
+     * @param list the array of integers to search in
+     * @param searchedInteger the integer value to search for in the list
+     * @return the index of searchedInteger in list or -1 if not found
+     */
     public int executeAlgorithm(int[] list, int searchedInteger) {
-        if (this.getClass() == SearchAlgorithm.class) {
-            logger.error("executeAlgorithm called from SearchAlgorithm. This can only be called from its Childclasses.");
-            return -1;
+        if (this.getClass() == SearchAlgorithm.class) { //überprüft ob Methode von SearchAlgorithm aufgerufen wird
+            return -3;
         }
         long startTime = System.nanoTime();
         logger.info("StartTime: " + startTime);
@@ -38,7 +42,9 @@ public abstract class SearchAlgorithm {
      * This helper method prints the result of the search algorithm to the console.
      * @param list the array of integers that was searched in
      * @param searchedInteger the integer that was searched for
-     * @param index the index of searchedInteger in list or -1 if not found or -2 if search algorithm is not implemented yet
+     * @param index the index of searchedInteger in list or -1 if not found
+     *              or -2 if search algorithm is not implemented yet
+     *              or -3 if the method is called directly from parent class
      */
     private void printSearchResult(int[] list, int searchedInteger, int index) {
           logger.info("Your given list: " + ListProcessor.getListAsString(list));
@@ -50,6 +56,8 @@ public abstract class SearchAlgorithm {
                     + ". Searched number: " + searchedInteger);
         } else if (index == -2) {
             logger.error("Search algorithm not implemented yet: " + this.getClass().getSimpleName());
+        } else if (index == -3) {
+            logger.error("executeAlgorithm called from SearchAlgorithm. This can only be called from its child classes.");
         }
     }
 

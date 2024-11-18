@@ -66,7 +66,7 @@ public class ListProcessor {
      * @param userInput a string of integers from the user
      * @return true it the input matches the expected format, false if otherwise
      */
-    private static boolean listInputValid(String userInput) {
+    public static boolean listInputValid(String userInput) {
         return userInput.matches("^\\d+(,\\d+)*$");
     }
 
