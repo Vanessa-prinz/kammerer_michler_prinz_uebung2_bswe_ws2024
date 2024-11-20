@@ -76,7 +76,7 @@ public class ListProcessorTests {
      */
     @Test
     public void isSortedAscending_Success() {
-        int[] inputList = {1,2,3,4,5,6,7,8,9};
+        int[] inputList = {1,2,3,4,5,5,6,7,8,9};
 
         Assertions.assertTrue(ListProcessor.isSortedAscending(inputList));
     }
