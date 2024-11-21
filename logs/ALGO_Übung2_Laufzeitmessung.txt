@@ -1,44 +1,44 @@
 listSortedOnlyPositive (binary Iterative):
 26 (vorne):
-	Lara:		324800ns
-	Vanessa:
+	Lara:		  324 800ns
+	Vanessa:    2 120 900ns, 2 176 600ns
 512 (mitte):
-	Lara:		211900ns
-	Vanessa:
+	Lara:		211 900ns
+	Vanessa:    299 000ns, 295 400ns
 966 (hinten):
-	Lara:		481900ns
-	Vanessa:
+	Lara:		481 900ns
+	Vanessa:    359 400ns, 338 700ns
 listSortedOnlyPositive (binary recursive):
 26 (vorne):
-	Lara:		611500ns
-	Vanessa:
+	Lara:		611 500ns
+	Vanessa:    483 400ns, 408 700ns
 512 (mitte):
-	Lara:		702800ns
-	Vanessa:
+	Lara:		702 800ns
+	Vanessa:    438 100ns, 352 100ns
 966 (hinten):
-	Lara:		594500ns
-	Vanessa:
+	Lara:		594 500ns
+	Vanessa:    177 500ns, 214 100ns
 listSortedOnlyPositive (exponential):
 26 (vorne):
-	Lara:		483900ns
-	Vanessa:
+	Lara:		483 900ns
+	Vanessa:    603 500ns, 365 200ns
 512 (mitte):
-	Lara:		653200ns
-	Vanessa:
+	Lara:		653 200ns
+	Vanessa:    494 800ns, 315 700ns
 966 (hinten):
-	Lara:		426400ns
-	Vanessa:
+	Lara:		426 400ns
+	Vanessa:    162 600ns, 359 600ns
 listSortedOnlyPositive (linear):
 26 (vorne):
-	Lara:		450200ns
-	Vanessa:
+	Lara:		450 200ns
+	Vanessa:    131 700ns, 282 500ns
 512 (mitte):
-	Lara:		278700ns
-	Vanessa:
+	Lara:		278 700ns
+	Vanessa:    164 400ns, 390 700ns
 966 (hinten):
-	Lara:		222800ns
-	Vanessa:
+	Lara:		222 800ns
+	Vanessa:    161 300ns, 313 700ns
 listUnsortedOnlyPositive (linear):
 6 (mitte): 
-	Lara:		423400ns
-	Vanessa:
+	Lara:		423 400ns
+	Vanessa:    138 200ns, 120 800ns
