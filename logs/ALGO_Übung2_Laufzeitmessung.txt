@@ -40,5 +40,5 @@ listSortedOnlyPositive (linear):
 	Vanessa:    161 300ns, 313 700ns
 listUnsortedOnlyPositive (linear):
 6 (mitte): 
-	Lara:		423 400ns, 125 9ns
+	Lara:		423 400ns, 125 900ns
 	Vanessa:    138 200ns, 120 800ns
