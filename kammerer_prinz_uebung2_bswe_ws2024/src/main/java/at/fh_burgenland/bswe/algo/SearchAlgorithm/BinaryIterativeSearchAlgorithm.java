@@ -21,6 +21,8 @@ public class BinaryIterativeSearchAlgorithm extends SearchAlgorithm {
 
         int lengthBeforeSubArray = 0;
         while (true) {
+            if (sortedList.length == 1 && sortedList[0] != searchedInteger)
+                return -1;
             if (sortedList[sortedList.length/2] == searchedInteger)
                 return sortedList.length/2 + lengthBeforeSubArray;
             else if (sortedList[sortedList.length/2] < searchedInteger) {
